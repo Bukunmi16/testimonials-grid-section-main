@@ -1,0 +1,270 @@
+html{
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body, html{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+body{
+  background-color: #ecf2f8;
+  margin: 0;
+  padding: 0;
+}
+
+p, h6, span {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  /* width: 70vw; */
+  overflow: hidden;
+  overflow-x: hidden;
+  padding-bottom: 30px;
+  max-width: 75rem;
+  max-height: 40rem;
+  margin: 0 auto;
+}
+
+.left-side{
+ /* border: 1px solid red; */
+ height: 100%;
+ width: 75%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.group1{
+  height: 47%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.group2{
+  height: 47%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.daniels-testimonial,.jonathans-testimonial,.jeanettes-testimonial, .patricks-testimonial, .kiras-testimonial{
+  /* border: 1px solid yellow; */
+  max-width: 75rem;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.daniel, .jonathan, .jeanette, .patrick, .kira {
+  margin: 23px;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.profile{
+  /* border: 1px solid red; */
+  display: flex;
+  height: 30px;
+  width: 140px;
+}
+
+.profile-picture img{
+  height: 30px;
+  align-self: center;
+  width: 30px;
+  border-radius: 50%;
+  padding: 0.5px;
+  margin-right: 10px;
+  background-color: #b3b3b3;
+  /* border: 1px solid yellow; */
+}
+.name-and-status{
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
+
+}
+.name-and-status h6{
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+.name-and-status p{
+  font-weight: 600;
+  font-size: 9px;
+  color: #b3b3b3;
+}
+
+
+.testimonial p{
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+.about p{
+  color: #b3b3b3;
+  font-size: 11px;
+}
+
+.daniels-testimonial{
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #7541c8;
+}
+
+.jonathans-testimonial{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #48556a;
+}
+
+
+
+.jeanettes-testimonial{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+
+.jeanettes-testimonial .jeanette .dark-blue-heading-and-testimonial{
+  color: #19212e;
+  
+}
+
+.patricks-testimonial{
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #19212e;
+}
+
+.kiras-testimonial{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 9px 11px 16px -11px rgba(0,0,0,0.75);
+}
+
+#quote{
+  width: 70px;
+  height: 80px;
+  position: absolute;
+  margin-top: 0;
+  right: 55%;
+  opacity: 0.4;
+}
+
+
+.kiras-testimonial-paragraph p{
+  font-size: 15px;
+  font-weight: 600;
+  color: #19212e;
+}
+
+.kira .profile h6 {
+  color: #19212e;
+}
+@media screen and (max-width: 1242px) {
+  body, html{
+    height: initial;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .card{
+  flex-direction: column;
+  justify-content: initial;
+  align-items: center;
+  overflow: visible;
+  min-height: 100vh;
+  max-width: 100vw;
+  max-height: initial;
+
+} 
+ .left-side{
+  flex-direction: column;
+  justify-content: initial;
+}
+.group1{
+  flex-direction: column;
+  height: 100%;
+  justify-content: initial;
+}
+
+.group2{
+  flex-direction: column;
+  justify-content: initial;
+  height: 100%;
+}
+
+ .daniels-testimonial,.jonathans-testimonial,.jeanettes-testimonial, .patricks-testimonial, .kiras-testimonial{
+  /* border: 1px solid yellow; */
+  overflow: visible;
+  height: 50%;
+  margin-top: 50px;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+ }
+
+ #quote{
+  width: 70px;
+  height: 80px;
+  position: absolute;
+  margin-top: 0;
+  right: 25%;
+  opacity: 0.4;
+}
+
+ .kiras-testimonial{
+  overflow: visible;
+  width: 75%;
+  }
+
+  .testimonial{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  } 
+
+}
+
+@media screen and (max-width: 650px) {
+  .card{
+    min-width: 100vw;
+    align-items: center;
+  }
+}
